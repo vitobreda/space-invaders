@@ -1,23 +1,43 @@
+body{
+    background: linear-gradient(-45deg, #686666e1, #ecc3d1, #857f84e8, #f3eded);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
     border: solid 1px;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
+    margin-left: 380px;
+    background-image: url("https://cutewallpaper.org/21/starry-night-background-hd/Starry-Sky-Background-PNG-Transparent-Starry-Sky-Background-.png");
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 38px;
+    height: 38px;
 }
 
 .shooter {
-    background-color: blue;
+    background-color: rgb(240, 88, 245);
+   
 }
 
 .invader {
-    background-color: purple;
-    border-radius: 10px;
+     background-color: rgba(240, 199, 240, 0.986); 
+    border-radius: 20px;
+ 
 }
 
 .boom {
@@ -25,5 +45,5 @@
 }
 
 .laser {
-    background-color: orange;
+    background-color: rgb(243, 204, 131);
 }
